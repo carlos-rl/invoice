@@ -7,6 +7,8 @@ pip install -r deploy/txt/requirements.txt
 pip install -r requirements.txt
 
 python manage.py collectstatic --no-input
+
 python manage.py makemigrations
 python manage.py migrate
 python manage.py shell --command='from core.init import *'
+python manage.py shell --command='from core.utils import *'
