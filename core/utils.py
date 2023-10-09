@@ -95,7 +95,7 @@ def insert_data():
             detail.product.save()
         purchase.calculate_invoice()
 
-    user = User(names='Consumidor Final', email='davilawilliam94@gmail.com', username='9999999999999')
+    user = User(names='Consumidor Final', email='c.rojano.95@gmail.com', username='9999999999999')
     user.set_password(user.username)
     user.save()
     user.groups.add(Group.objects.get(pk=settings.GROUPS.get('client')))
@@ -109,30 +109,30 @@ def insert_data():
     client.send_email_invoice = False
     client.save()
 
-    user = User(names='William Jair Dávila Vargas', email='wdavilav1994@gmail.com', username='0928363993')
-    user.set_password(user.username)
-    user.save()
-    user.groups.add(Group.objects.get(pk=settings.GROUPS.get('client')))
-    client = Client()
-    client.user = user
-    client.dni = user.username
-    client.birthdate = date(1994, 10, 19)
-    client.mobile = '0979014551'
-    client.address = 'Milagro, cdla. Paquisha'
-    client.save()
+    # user = User(names='William Jair Dávila Vargas', email='wdavilav1994@gmail.com', username='0928363993')
+    # user.set_password(user.username)
+    # user.save()
+    # user.groups.add(Group.objects.get(pk=settings.GROUPS.get('client')))
+    # client = Client()
+    # client.user = user
+    # client.dni = user.username
+    # client.birthdate = date(1994, 10, 19)
+    # client.mobile = '0979014551'
+    # client.address = 'Milagro, cdla. Paquisha'
+    # client.save()
 
-    user = User(names='LIBRIMUNDI LIBRERÍA INTERNACIONAL S.A.', email='williamjairdavilavargas@gmail.com', username='1791411293001')
-    user.set_password(user.username)
-    user.save()
-    user.groups.add(Group.objects.get(pk=settings.GROUPS.get('client')))
-    client = Client()
-    client.user = user
-    client.dni = user.username
-    client.birthdate = date(1994, 10, 19)
-    client.mobile = '0979014552'
-    client.address = 'Milagro, cdla. Paquisha'
-    client.identification_type = IDENTIFICATION_TYPE[1][0]
-    client.save()
+    # user = User(names='LIBRIMUNDI LIBRERÍA INTERNACIONAL S.A.', email='williamjairdavilavargas@gmail.com', username='1791411293001')
+    # user.set_password(user.username)
+    # user.save()
+    # user.groups.add(Group.objects.get(pk=settings.GROUPS.get('client')))
+    # client = Client()
+    # client.user = user
+    # client.dni = user.username
+    # client.birthdate = date(1994, 10, 19)
+    # client.mobile = '0979014552'
+    # client.address = 'Milagro, cdla. Paquisha'
+    # client.identification_type = IDENTIFICATION_TYPE[1][0]
+    # client.save()
 
 
 insert_data()

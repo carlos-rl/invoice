@@ -61,6 +61,7 @@ Para windows:
 ```bash
 cd venv\Scripts\activate.bat 
 .\venv\Scripts\activate
+source venv/Scripts/activate
 ```
 
 Para Linux:

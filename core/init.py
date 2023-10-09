@@ -434,9 +434,9 @@ for module in Module.objects.filter(url__in=['/pos/client/update/profile/', '/po
         group.permissions.add(permission)
 
 user = User()
-user.names = 'William Jair Dávila Vargas'
+user.names = 'Carlos Fernando Rojano Lárraga'
 user.username = 'admin'
-user.email = 'davilawilliam93@gmail.com'
+user.email = 'c.rojano.95@gmail.com'
 user.is_active = True
 user.is_superuser = True
 user.is_staff = True
